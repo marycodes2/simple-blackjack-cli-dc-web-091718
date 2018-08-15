@@ -26,6 +26,7 @@ def initial_round
   first_deal = deal_card
   second_deal = deal_card
   card_total = first_deal + second_deal
+  puts "This is the end of your first deal"
   display_card_total(card_total)
   card_total
 end
@@ -55,10 +56,10 @@ end
 #####################################################
 
 def runner
-  card_sum = 0
+card_sum = 0
+welcome
+card_sum = initial_round
   until card_sum > 21 do
-    welcome
-    card_sum = initial_round
     card_sum = hit?(card_sum)
     display_card_total(card_sum)
   end
