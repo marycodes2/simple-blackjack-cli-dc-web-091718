@@ -56,7 +56,6 @@ end
 #####################################################
 
 def runner
-card_sum = 0
 welcome
 card_sum = initial_round
   until card_sum > 21 do
